@@ -4,7 +4,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Forkio: Responsive Bootstrap HTML Template</title>
+	<title>Сюткин Денис/Web-разработка</title>
 	<meta name="description"
 		content="A free responsive website template made exclusively for Codrops by Pixel Buddha and PSD2HTML">
 	<meta name="keywords" content="website template, css3, one page, bootstrap, app template, web app, start-up">
@@ -44,7 +44,7 @@
 					<div class="logo__box">
 						<!-- <img class="logo__img" src="/images/avatar-small.png" alt="Сюткин Денис, web-разработчик"> -->
 					</div>
-					<h1 class="logo__text"><span>С</span>юткин <br><span>Д</span>енис</h1>
+					<h2 class="logo__text"><span>С</span>юткин <br><span>Д</span>енис</h2>
 				</div>
 				<nav id="nav">
 					<div class="opener-holder">
@@ -55,9 +55,9 @@
 						<ul>
 							<li class="active visible-sm visible-xs"><a href="#">Home</a></li>
 							<li><a href="#">Обо мне</a></li>
-							<li><a href="#">About Fork</a></li>
 							<li><a href="#">Мои работы</a></li>
 							<li><a href="#">Контакты</a></li>
+							<li><a href="#">Расчет стоимости</a></li>
 						</ul>
 						<div class="drop-holder visible-sm visible-xs">
 							<span>Follow Us</span>
@@ -75,14 +75,15 @@
 			<div class="container">
 				<div class="text-block">
 					<div class="heading-holder">
-						<h2>Web-разработчик</h2>
+						<h1>Web-разработчик</h1>
 					</div>
 					<p class="tagline">Разработка и создание сайтов под ключ</p>
-					<span class="info">Web-разработчик</span>
+					<!-- <span class="info">Web-разработчик</span> -->
 				</div>
 			</div>
 			<img src="images/img-decor-01.jpg" alt="" class="bg-stretch">
 		</section>
+
 		<section class="main">
 			<div class="container">
 				<div id="cta">
@@ -90,13 +91,36 @@
 				</div>
 				<div class="row">
 					<div class="text-box col-md-offset-1 col-md-10">
-						<h2>Revolutionary editor</h2>
-						<p>Aenean cursus imperdiet nisl id fermentum. Aliquam pharetra dui laoreet vulputate dignissim. Sed id metus
-							id quam auctor molestie eget ut augue. </p>
+						<h2>Обо мне</h2>
+						<div class="main__text">Приветствую Вас на своем личном сайте. <br>Меня зовут <strong>Сюткин Денис</strong>,
+							и я <strong>Web-разработчик</strong>.</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-4 main-img-box">
+						<img class="main__img" src="/images/i-s.jpg" alt="Сюткин Денис, Web-разработчик">
+					</div>
+					<div class="col-md-8">
+							<div class="main__text">
+								Я занимаюсь созданием и поддержкой сайтов различной сложности: Landing Page, сайт-визитка, одностраничник,	блог или интернет-магазин...
+							</div>
+							<div class="main__text">
+								При необходимости окажу помощь по выбору доменного имени (адреса сайта в сети интернет) и размещению (либо размещу сам) на указанном Вами хостинге. Обучу, как управлять Вашим сайтом . Возможно мое личное и сопровождение сайта (по договоренности). 
+							</div>
+							<div class="main__text">
+								На сайт добавляю нужный функционал(формы обратной связи (заявки клиентов будут приходить на Ваш E-mail), всплывающие окна (popup), счетчики - Яндекс.Метрика и Google Analytics (Вы сможете видеть и анализировать, что делают посетители на Вашем сайте, сколько пользователей посетили сайт и многое другое).
+							</div>
+							<div class="main__text">
+								При создании сайта использую технологи: <strong><span class="element"></span> </strong>
+							</div>
+							<div class="main__text">
+								Буду рад с Вами сотрудничать!
+							</div>
 					</div>
 				</div>
 			</div>
 		</section>
+
 		<section class="area">
 			<div class="container">
 				<div class="row">
@@ -441,6 +465,19 @@
 	<script src="js/jquery-1.11.2.min.js"></script>
 	<script src="js/bootstrap.js"></script>
 	<script src="js/jquery.main.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.9"></script>
+	<script>
+		jQuery(document).ready(function(){
+			var typed = new Typed(".element", {
+				strings: ["HTML5", "CSS3", "JS", "Jquery", "Bootstrap", "Sass", "Wordpress", "Photoshop", "Avocode"],
+				typeSpeed: 90,
+				backSpeed: 50,
+				loop: true
+			});			
+		});
+
+	</script>
+			
 </body>
 
 </html>
