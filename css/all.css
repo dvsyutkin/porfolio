@@ -8,14 +8,24 @@
   width: 100%;
 }
 
-.main-box-text {
+.main__skills {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 20px;
+}
+
+.main__skills-box {
+  width: 38px;
+}
+
+.main__skills-box img {
+  width: 100%;
 }
 
 .text-box {
@@ -122,8 +132,7 @@ p {
 .logo__text {
   font-size: 18px;
   line-height: 17px;
-  letter-spacing: 3px;
-  font-family: "Source Sans Pro", sans-serif;
+  letter-spacing: 1px;
   color: #716E79;
   font-weight: bold;
 }
