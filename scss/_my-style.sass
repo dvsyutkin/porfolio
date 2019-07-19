@@ -13,10 +13,158 @@
     margin-top: 20px
     &-box
       width: 38px
+      cursor: pointer
       & img
         width: 100%
+        transition: all .5s
+        &:hover
+          transform: scale(1.5)
 .text-box
   margin-bottom: 40px  
+
+// блок порядок работы
+.sequence
+  &__title
+    position: relative
+    margin-bottom: 50px
+    font-size: 4rem
+    line-height: 1.107
+    font-weight: bold
+  &__text
+    position: relative
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.7rem
+    line-height: 20px
+  &__icon
+    font-size: 5rem
+    color: #8d81ac
+    font-weight: bold
+  &__num
+    position: absolute
+    top: 50%
+    right: 50%
+    font-family: 'Luckiest Guy', cursive
+    font-size: 10rem
+    color: #8d81ac
+    opacity: .3
+    transform: translateY(-50%)
+
+// блок с примерами работ
+.examples
+  margin-top: 50px
+  &__title
+    margin-bottom: 40px
+    font-size: 4rem
+    font-weight: bold
+  &__wrap
+    position: relative
+    margin-bottom: 30px
+    overflow: hidden
+    box-shadow: 4px 3px 17px 0px rgba(0,0,0,0.75)
+    transform: translateZ(10%)
+    &:hover
+      .examples__overlay
+        transform: translateX(0)
+      .examples__overlay-title
+        &:before
+          transform: scale(1)
+  &__img
+    width: 100%
+  &__overlay
+    position: absolute
+    display: flex
+    justify-content: center
+    align-items: center
+    flex-direction: column
+    top: 0
+    right: 0
+    bottom: 0
+    left: 0
+    background: rgba(0, 0, 0, 0.7)
+    transform: translateY(-100%)
+    transition: all 0.5s
+    &-title
+      position: relative
+      margin-bottom: 20px
+      color: #fff
+      font-size: 18px
+      font-weight: bold
+      &:before
+        content: ''
+        position: absolute
+        bottom: 0
+        width: 100%
+        height: 4px
+        background: #8d81ac
+        transform: scale(0)
+        transition: transform 0.5s
+        transition-delay: 0.4s
+    &-btn
+      padding: 8px 15px
+      color: #fff
+      border: 3px solid #fff
+      font-weight: bold
+      font-size: 15px
+      background: transparent
+      outline: none
+      transition: all 0.4s
+      &:hover
+        background: #8d81ac
+        border: 3px solid #8d81ac
+  &__hidden
+    position: relative
+    padding: 30px 50px 
+    background: #fff
+    &-wrap
+      z-index: 9999
+      position: fixed
+      display: none
+      justify-content: center
+      align-items: center
+      top: 0
+      right: 0
+      bottom: 0
+      left: 0
+      background: rgba(0, 0, 0, 0.7)
+    &-img
+      width: 100%
+      box-shadow: 10px 12px 13px -5px rgba(141,129,172,1)
+    &__title
+      position: relative
+      margin-bottom: 30px
+      font-size: 4rem
+      line-height: 34px
+      &:after
+        content: ''
+        position: absolute
+        bottom: -10px
+        left: 0
+        width: 100px
+        height: 6px
+        background: #8d81ac
+    &__desc
+      margin-bottom: 30px
+      text-align: justify
+      font-size: 16px
+    &__link
+      font-size: 16px
+      font-weight: bold
+    &-btn
+      position: absolute
+      top: -31px
+      right: -31px
+      background: #ffffff
+      border: 2px solid #8d81ac
+      color: #8d81ac
+      font-size: 20px
+      line-height: 25px
+      outline: none
+      &:hover
+        background: rgba(255,255,255,1)
+        background: linear-gradient(to bottom, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 47%, rgba(141,129,172,1) 100%)
+
+
+
 
 
 

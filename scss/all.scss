@@ -6,8 +6,8 @@ mobileLandscape:480px);
 // $mq-show-breakpoints: (mobile, mobileLandscape, tablet, desktop, widescreen, tvscreen);
 @import "bootstrap-custom";
 @import "bootstrap/variables";
-@import "bootstrap/mixins";
-@import "base/markup-mixins";
+// @import "bootstrap/mixins";
+// @import "base/markup-mixins";
 @import "mq";
 @import "my-style";
 
@@ -86,7 +86,7 @@ p {
 		width: 80px;
 		border-radius: 50%;
 		overflow: hidden;
-		background: url('/images/avatar-small.png') no-repeat;
+		background: url('../images/avatar-small.png') no-repeat;
 		background-position-y: 6px;
 		background-position-x: -4px;
 		background-size: cover;
@@ -792,7 +792,8 @@ p {
 		font-size: 3rem;
 		line-height: 1.4;
 		font-weight: bold;
-		color: #635C73;
+		// color: #635C73;
+		color: #8d81ac
 	}
 	.form-group {
 		overflow: hidden;
